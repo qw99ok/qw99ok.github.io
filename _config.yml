@@ -1,0 +1,98 @@
+# Site settings
+title: qw99ok
+SEOTitle: 炎辰的博客 | qw99ok
+header-img: img/post-bg-desk.jpg
+email: qw_98_ok@163.com
+description: "Every failure is leading towards success."
+keyword: "qw99ok, qw99ok Blog, 炎辰的博客, qw99ok, 炎辰, iOS, Apple, iPhone"
+url: "http://qw99ok.github.io"          # your host, for absolute URL
+baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+github_repo: "https://github.com/qw99ok/qw99ok.github.io.git" # you code repository
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "Goals determine what you going to be!" # 目标决定你将成为怎样的人!
+sidebar-avatar: /img/about-me.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+# ================================================================================= #
+# SNS settings
+RSS: false
+# weibo_username:     qw99ok
+zhihu_username:     qw99ok
+github_username:    qw99ok
+facebook_username:  qw99ok
+jianshu_username:   qw99ok
+#twitter_username:   qw99ok
+
+# ================================================================================= #
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+# port:4001
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+plugins: [jekyll-paginate]
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+# ================================================================================= #
+# 评论系统
+# Disqus（https://disqus.com/）
+# disqus_username: qw99ok
+disqus:
+  enable: false    # 是否开启Disqus评论
+
+# Gitalk
+gitalk:
+  enable: false    # 是否开启Gitalk评论
+  clientID:                             # 生成的clientID
+  clientSecret:     # 生成的clientSecret
+  repo: qw99ok.github.io    # 仓库名称
+  owner: qw99ok    # github用户名
+  admin: qw99ok
+  distractionFreeMode: true # 是否启用类似FB的阴影遮罩
+
+# ================================================================================= #
+# 统计
+
+# Analytics settings
+# Baidu Analytics
+ba_track_id: 
+
+# Featured Tags
+featured-tags: true                     # 是否使用首页标签
+featured-condition-size: 0              # 相同标签数量大于这个数，才会出现在首页
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+# ================================================================================= #
+# Friends，友情链接
+friends: [
+    {
+        title: "Spring For All社区",
+        href: "http://spring4all.com/"
+    },{
+        title: "Spring Cloud中文网",
+        href: "https://springcloud.cc/"
+    },{
+        title: "程序猿DD",
+        href: "http://blog.didispace.com"
+    },{
+        title: "芋道源码",
+        href: "http://www.iocoder.cn/"
+    }
+]
