@@ -98,21 +98,6 @@ layout: default
                 </section>
                 {% endif %}
 
-                <!-- categories -->
-                {% if site.categories %}
-                <section>
-                    <hr class="hidden-sm hidden-xs">
-                    <h5><a href="{{'/categories/' | prepend: site.baseurl }}">CATEGORIES</a></h5>
-                    <div class="tags">
-                        {% for category in site.categories %}
-                            <a href="{{ site.baseurl }}/categories/#{{ category[0] }}" title="{{ category[0] }}" rel="{{ category[1].size }}">
-                                {{ category[0] }}
-                            </a>
-                        {% endfor %}
-                    </div>
-                </section>
-                {% endif %}
-
                 <!-- Short About -->
                 <section class="visible-md visible-lg">
                     <hr><h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
@@ -205,6 +190,22 @@ layout: default
                         {% endif %}
                     </div>
                 </section>
+
+                <!-- categories -->
+                {% if site.categories %}
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="{{'/categories/' | prepend: site.baseurl }}">CATEGORIES</a></h5>
+                    <div class="tags">
+                        {% for category in site.categories %}
+                            <a href="{{ site.baseurl }}/categories/#{{ category[0] }}" title="{{ category[0] }}" rel="{{ category[1].size }}">
+                                {{ category[0] }}
+                            </a>
+                        {% endfor %}
+                    </div>
+                </section>
+                {% endif %}
+                
                 <!-- Friends Blog -->
                 {% if site.friends %}
                 <hr>
