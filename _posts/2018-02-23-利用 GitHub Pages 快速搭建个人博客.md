@@ -2,7 +2,7 @@
 layout:     post
 title:      利用 GitHub Pages 快速搭建个人博客
 subtitle:   利用 GitHub Pages 快速搭建个人博客
-date:       2018-07-23
+date:       2018-02-23
 author:     qw99ok
 header-img: img/post-bg-cook.jpg
 catalog: true
