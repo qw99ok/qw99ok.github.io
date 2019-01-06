@@ -75,6 +75,9 @@ ba_track_id:
 featured-tags: true                     # 是否使用首页标签
 featured-condition-size: 0              # 相同标签数量大于这个数，才会出现在首页
 
+# Categories
+categories: true
+
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
 service-worker: true
