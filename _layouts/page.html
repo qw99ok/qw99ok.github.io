@@ -196,16 +196,17 @@ layout: default
                 <section>
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="{{'/categories/' | prepend: site.baseurl }}">CATEGORIES</a></h5>
-                    <div class="tags">
+                    <div class="categories">
                         {% for category in site.categories %}
                             <a href="{{ site.baseurl }}/categories/#{{ category[0] }}" title="{{ category[0] }}" rel="{{ category[1].size }}">
-                                {{ category[0] }}
+                                {{ category[0] }} ({{ category[1].size }})
                             </a>
+                            <br/>
                         {% endfor %}
                     </div>
                 </section>
                 {% endif %}
-                
+
                 <!-- Friends Blog -->
                 {% if site.friends %}
                 <hr>
