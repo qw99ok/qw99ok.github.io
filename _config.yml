@@ -65,11 +65,11 @@ gitalk:
   distractionFreeMode: true # 是否启用类似FB的阴影遮罩
 
 # ================================================================================= #
-# 统计
+# Analytics，统计
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: 
+baidu-analysis_id: 8433af438afc3c112fb053a20f1d750e
 
 # Featured Tags
 featured-tags: true                     # 是否使用首页标签
